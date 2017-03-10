@@ -1,17 +1,7 @@
 #define CATCH_CONFIG_MAIN  
 #include <iostream>
 #include "catch.hpp"
-
-int binpow (int a, int n) {
-	int res = 1;
-	while (n) {
-		if (n & 1)
-			res *= a;
-		a *= a;
-		n >>= 1;
-	}
-	return res;
-}
+#include "mathTest.h"
 
 TEST_CASE( "Pow are computed", "[binpow]" ) {
     REQUIRE( binpow(1,10) == 1 );
