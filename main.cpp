@@ -1,13 +1,2 @@
-#include <iostream>
-#include <stdlib>
-#include "binpow.h"
-using namespace std;
-
-int main()
-{
-  int a, n;
-  cout << "Input a and n: "
-  cin >> a >> n;
-  cout << "pow(" + a + ", " + n + ") = " + binpow(a,n);
-  return 0;
-}
+#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+#include "catch.hpp"
