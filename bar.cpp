@@ -11,10 +11,10 @@ int factor(int n)
 }
 
 TEST_CASE( "factorial are computed", "[factor]" ) {
-    REQUIRE( binpow(1) == 1 );
-    REQUIRE( binpow(2) == 2 );
-    REQUIRE( binpow(3) == 6 );
-    REQUIRE( binpow(10) == 3628800 );
+    REQUIRE( factor(1) == 1 );
+    REQUIRE( factor(2) == 2 );
+    REQUIRE( factor(3) == 6 );
+    REQUIRE( factor(10) == 3628800 );
 }
 
 
